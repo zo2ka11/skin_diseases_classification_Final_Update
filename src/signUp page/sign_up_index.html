@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="sign_up_style.css">
+    </head>
+    <body>
+        <div class="container">
+            <span class="error animated tada" id="msg"></span>
+            <form name="form1" class="box" onsubmit="return checkStuff()">
+                <h4>I<span class="typed-form1"></span></h4>
+                <h5><span>Sign Up</span></h5>
+                <input type="text" name="name" placeholder="Name" autocomplete="off">
+
+                <input type="text" name="email" placeholder="Email" autocomplete="off">
+                <i class="typcn typcn-eye" id="eye"></i>
+                <input type="password" name="password" placeholder="Passsword" id="pwd" autocomplete="off">
+                
+                <input type="submit" value="Sign Up" class="btn1">
+            </form>
+            <a href="#" class="dnthave">Already have an account? Sign in</a>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+            <script>
+                var typed = new Typed(".typed-form1",{
+                    strings:["","Doctor"],
+                    typeSpeed:50,
+                    BackSpeed:20,
+                    loop:true
+                })
+            </script>
+    </body>
+</html>
